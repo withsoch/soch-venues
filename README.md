@@ -30,6 +30,14 @@ folder.
 which Vercel ignores anywhere but the project root. Same rules, scoped per
 venue folder with `/:venue/…`.
 
+**A rewrite `source` must end in `/` or carry a file extension.** The
+trailing-slash redirect runs *before* rewrites, so a `source` of `/foo` never
+matches — the request is 308'd to `/foo/` first and the rewrite is looked up
+against that. Verified on this project: `source: "/_hosttest"` returned a bare
+308, `source: "/_hosttest/"` served the venue. The client-domain rules below
+are unaffected, because `/` is already slash-terminated and asset paths carry
+extensions (Vercel does not append a slash to those).
+
 ## Layout
 
 ```
