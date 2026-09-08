@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Kartul</title>
+<meta name="description" content="Kartul on vegan kohvik Tallinna Kalamajas, kus pakutakse täidetud ahjukartuleid, kohvi ja õlut ning kohapeal on ka zine&#39;ide riiul ja väike pood.">
+<link rel="canonical" href="/">
+
+<!-- Concept build. Drop this line once the venue has seen it and asked for it to go live. -->
+<meta name="robots" content="noindex, nofollow">
+
+
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Kartul">
+<meta property="og:title" content="Kartul">
+<meta property="og:description" content="Täidetud vegan ahjukartulid, kohv ja õlu Kalamajas, Tallinnas.">
+<meta property="og:image" content="/assets/img/venue-0.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="et_EE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="ru_RU">
+
+<meta property="og:url" content="/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kartul">
+<meta name="twitter:description" content="Täidetud vegan ahjukartulid, kohv ja õlu Kalamajas, Tallinnas.">
+<meta name="twitter:image" content="/assets/img/venue-0.jpg">
+<meta name="theme-color" content="#F5F2EC">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/venue-0.jpg">
+
+
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="assets/fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="preload" href="assets/img/hero-poster.jpg" as="image" fetchpriority="high">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Kartul",
+  "servesCuisine": ["Vegan", "International"],
+  "priceRange": "€5-10",
+  "url": "/",
+  "telephone": "+372 529 2456",
+  "image": "/assets/img/venue-0.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kopli tn 16",
+    "addressLocality": "Tallinn",
+    "postalCode": "10412",
+    "addressCountry": "EE"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 59.4418266, "longitude": 24.7332385 },
+  "hasMap": "https://www.google.com/maps/place/Kartul/@59.4418266,24.7306636,17z/data=!3m1!4b1!4m6!3m5!1s0x4692938efdd7634b:0x5db90a5223f52ac8!8m2!3d59.4418266!4d24.7332385!16s%2Fg%2F11mkrqglv2?entry=tts&g_ep=EgoyMDI2MDkwMi4wIPu8ASoASAFQAw%3D%3D&skid=b443d61f-29da-4f5d-a821-6695a58cc5a8&ucbcb=1",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "103" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday","Thursday","Sunday"], "opens": "12:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday","Saturday"], "opens": "12:00", "closes": "23:00" }
+    
+  ],
+  "acceptsReservations": "False"
+}
+</script>
+</head>
+
+<body data-theme="ember" data-mode="light" data-depth="full">
+<a class="skip" href="#kitchen" data-i18n="ui.skip">Liigu põhisisu juurde</a>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════════════ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Kartul, avaleht" data-i18n-attr="aria-label:ui.navHome">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+      <rect width="40" height="40" rx="9" fill="currentColor"/>
+      <text x="20" y="20" fill="var(--paper)" font-family="inherit"
+            font-size="27" font-weight="700" text-anchor="middle"
+            dominant-baseline="central">K</text>
+    </svg>
+    <span class="nav__word">Kartul</span>
+  </a>
+  <nav class="nav__links" aria-label="Peamine" data-i18n-attr="aria-label:ui.navPrimary">
+    <a href="#kitchen" data-i18n="nav.0.label">Köök</a><a href="#rating" data-i18n="nav.1.label">Hinnang</a><a href="#visit" data-i18n="nav.2.label">Külasta</a>
+  </nav>
+  
+  <div class="langswitch" role="group" aria-label="Keel" data-i18n-attr="aria-label:ui.langGroup">
+    <button type="button" data-lang="et" lang="et" title="Eesti keeles"
+      aria-pressed="true">ET</button><button type="button" data-lang="en" lang="en" title="In English"
+      aria-pressed="false">EN</button><button type="button" data-lang="ru" lang="ru" title="По-русски"
+      aria-pressed="false">RU</button>
+  </div>
+  
+  <a class="btn btn--sm btn--accent" href="tel:+3725292456">
+    <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>
+    <span data-i18n="ui.order">Telli</span>
+  </a>
+</header>
+
+<!-- ══ HERO ═════════════════════════════════════════════════════════════ -->
+<section class="hero" id="top">
+  <div class="hero__media" data-px="0.20" data-depth-layer="-3">
+    
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata"
+           poster="assets/img/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+      <source media="(max-width:820px)" src="assets/video/hero-720.mp4" type="video/mp4">
+      
+      <source src="assets/video/hero-1080.mp4" type="video/mp4">
+    </video>
+    
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+
+  <div class="hero__inner" data-px="-0.14" data-depth-layer="2">
+    <p class="eyebrow reveal">Kopli tn 16 · Põhja-Tallinn · Tallinn</p>
+    <h1 class="hero__title reveal">
+      <span class="hero__l1">Kartul</span>
+    </h1>
+    <p class="hero__tag reveal" data-i18n="venue.tagline">Vegan kartulikohvik Kalamajas kohvi, õlle ja ajakirjariiuliga.</p>
+
+    <div class="hero__meta reveal">
+      
+      <a class="scorechip" href="#rating" id="heroScore" aria-label="Google hinnang" data-i18n-attr="aria-label:ui.ratingAria">
+        <span class="scorechip__star" aria-hidden="true">★</span>
+        <b data-score-rating>5</b>
+        <span class="scorechip__sep" aria-hidden="true">/</span>
+        <span data-i18n="ui.scoreReviews">103 Google arvustust</span>
+      </a>
+      
+      <!-- No data-i18n hook: paintHours() owns this text and writes it in the
+           active language. Giving it one meant paintI18n reset it to the
+           "Checking hours…" placeholder every time the live rating landed, so
+           the pill sat there loading forever with data-state="open". -->
+      <span id="openState" class="openpill" data-state="loading">Kontrollime lahtiolekuaegu…</span>
+    </div>
+
+    <div class="hero__cta reveal">
+      <a class="btn btn--accent btn--lg" href="tel:+3725292456" data-i18n="contact.ctaLabel">Helista ja telli</a>
+      <a class="btn btn--outline btn--lg" href="#visit" data-i18n="ui.findUs">Leia meid</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ════════════════════════════════════════════════════════════ -->
+<section class="stats">
+  <div class="wrap stats__grid">
+    
+    <div class="stat reveal"><span class="stat__n" data-score-rating>5</span><span class="stat__l" data-i18n="stats.0.label">Google'i hinnang</span></div>
+    
+    <div class="stat reveal"><span class="stat__n">€5-10</span><span class="stat__l" data-i18n="stats.1.label">Inimese kohta</span></div>
+    
+  </div>
+</section>
+
+<!-- ══ STORY ════════════════════════════════════════════════════════════ -->
+<section class="kitchen section" id="kitchen">
+  <div class="wrap kitchen__grid">
+    <div class="kitchen__copy">
+      <p class="eyebrow reveal" data-i18n="story.eyebrow">Köök</p>
+      <h2 class="h2 reveal" data-i18n="story.heading">Kartulid, tehtud <em>korralikult</em></h2>
+      <p class="lede reveal" data-i18n="story.lede">Kartul on väike vegan kohvik Kalamajas, mis keskendub ühele asjale: täidetud ahjukartulile.</p>
+      <p class="reveal" data-i18n="story.body">Ahjukartulid tulevad lauale kuhjaga täidisega, alates chimichurri't kuni Lõuna-Aasia vürtside ja hapukas-magusa maitseni. See on taimne mugavustoit, odav ja kõhtutäitev, kõrvale kohv ja õlu.</p>
+      
+      <ul class="ticks reveal">
+        <li data-i18n="story.highlights.0">Täielikult vegan menüü</li><li data-i18n="story.highlights.1">Täidetud ahjukartulid maailma maitsetega</li><li data-i18n="story.highlights.2">Zine'ide riiul ja väike pood kohapeal</li>
+      </ul>
+      
+    </div>
+
+    
+    <div class="kitchen__stack">
+      
+      <figure class="kfig kfig--0" data-px="0.1" data-depth-layer="1">
+        <img src="assets/img/venue-0.jpg" alt="Kartul" width="1400" height="788" loading="lazy" decoding="async" data-i18n-attr="alt:media.gallery.0.alt">
+      </figure>
+      
+      <figure class="kfig kfig--1" data-px="-0.13" data-depth-layer="-1">
+        <img src="assets/img/venue-1.jpg" alt="Kartul" width="1400" height="788" loading="lazy" decoding="async" data-i18n-attr="alt:media.gallery.1.alt">
+      </figure>
+      
+      <figure class="kfig kfig--2" data-px="0.18" data-depth-layer="2">
+        <img src="assets/img/venue-2.jpg" alt="Kartul" width="1400" height="788" loading="lazy" decoding="async" data-i18n-attr="alt:media.gallery.2.alt">
+      </figure>
+      
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══ BAND ═════════════════════════════════════════════════════════════ -->
+
+<section class="band" aria-label="Kartul" data-i18n-attr="aria-label:band.label">
+  <div class="band__media" data-px="0.16" data-depth-layer="-2" style="background-image:url('assets/img/venue-0.jpg')" aria-hidden="true"></div>
+  <div class="band__scrim" aria-hidden="true"></div>
+  <div class="wrap band__inner">
+    <p class="eyebrow reveal" data-i18n="band.eyebrow">Üks kartul, mitu moodust seda süüa</p>
+    <h2 class="band__h reveal" data-i18n="band.heading">Täidetud <em>ahjukartul</em></h2>
+    <p class="band__p reveal" data-i18n="band.body">Iga kartul küpsetatakse ja täidetakse tellimuse peale, valikus chimichurri, Lõuna-Aasia ja hapukas-magusa stiilis variandid.</p>
+  </div>
+</section>
+
+
+<!-- ══ MENU ═════════════════════════════════════════════════════════════ -->
+
+
+<!-- ══ RATING ═══════════════════════════════════════════════════════════ -->
+
+<section class="rating section" id="rating">
+  <div class="rating__bg" data-px="0.12" data-depth-layer="-2" aria-hidden="true"
+    style="background-image:url('assets/img/venue-2.jpg')"></div>
+  <div class="wrap rating__grid">
+    <div class="rating__panel reveal">
+      <p class="eyebrow" data-i18n="ui.liveFrom">Otse Google</p>
+      <div class="bigscore">
+        <span class="bigscore__n" data-score-rating>5</span>
+        <span class="bigscore__of">/ 5</span>
+      </div>
+      <div class="bigscore__stars" id="starRow" role="img" aria-label="Hinnang 5 / 5" data-i18n-attr="aria-label:ui.ratedOutOf5">★★★★★</div>
+      <p class="bigscore__count" data-i18n="ui.bigscoreFrom">103 Google arvustuse põhjal</p>
+      <p class="bigscore__stamp" id="scoreStamp" data-i18n="ui.checkedDaily">Kontrollitud iga päev</p>
+      <a class="btn btn--outline" href="https://www.google.com/maps/place/Kartul/@59.4418266,24.7306636,17z/data=!3m1!4b1!4m6!3m5!1s0x4692938efdd7634b:0x5db90a5223f52ac8!8m2!3d59.4418266!4d24.7332385!16s%2Fg%2F11mkrqglv2?entry=tts&g_ep=EgoyMDI2MDkwMi4wIPu8ASoASAFQAw%3D%3D&skid=b443d61f-29da-4f5d-a821-6695a58cc5a8&ucbcb=1" target="_blank" rel="noopener" data-i18n="ui.readOn">Loe neid Google</a>
+    </div>
+
+    
+    <div class="rating__quotes">
+      
+      <figure class="quote reveal">
+        <blockquote><p>Super cozy spot to grab a coffee or beer or both, in addition to a delicious, nutritious, vegan potato based meal. They also have dumplings that are incredible! I recommend you try everything. Including the soup!</p></blockquote>
+        <figcaption><b>Gates Callanan</b><span>Local Guide · 188 reviews</span></figcaption>
+      </figure>
+      
+      <figure class="quote reveal">
+        <blockquote><p>Potatoes were so very good! I mean, it was so comforting, homey, filling and fun. We also tried dumplings and were not dissapointed. Service was such joyful and fun and pleasant. We left bellies full and happy!</p></blockquote>
+        <figcaption><b>Sirilin Keskla</b><span>Local Guide · 115 reviews</span></figcaption>
+      </figure>
+      
+      <figure class="quote reveal">
+        <blockquote><p>Great spot for a casual lunch / dinner. I had the sweet and sour potato, which had some great flavour with spring onions. Very reasonable prices, was a great spot for a vegan meal.</p></blockquote>
+        <figcaption><b>Chris</b><span>Local Guide · 10 reviews</span></figcaption>
+      </figure>
+      
+      <p class="footnote reveal" data-i18n="ui.quotedAsWritten">Arvustused avaldatud Google, tsiteeritud muutmata kujul.</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- ══ VISIT ════════════════════════════════════════════════════════════ -->
+<section class="visit section" id="visit">
+  <div class="wrap visit__grid">
+    <div class="card reveal">
+      <h2 class="h3" data-i18n="ui.openingHours">Lahtiolekuajad</h2>
+      <table class="hours" id="hours">
+        <tbody>
+          
+          <tr data-day="1"><th scope="row" data-i18n="hours.days.0.label">Esmaspäev</th><td class="shut" data-i18n="ui.closed">Suletud</td></tr>
+          
+          <tr data-day="2"><th scope="row" data-i18n="hours.days.1.label">Teisipäev</th><td class="shut" data-i18n="ui.closed">Suletud</td></tr>
+          
+          <tr data-day="3"><th scope="row" data-i18n="hours.days.2.label">Kolmapäev</th><td>12:00 – 20:00</td></tr>
+          
+          <tr data-day="4"><th scope="row" data-i18n="hours.days.3.label">Neljapäev</th><td>12:00 – 20:00</td></tr>
+          
+          <tr data-day="5"><th scope="row" data-i18n="hours.days.4.label">Reede</th><td>12:00 – 23:00</td></tr>
+          
+          <tr data-day="6"><th scope="row" data-i18n="hours.days.5.label">Laupäev</th><td>12:00 – 23:00</td></tr>
+          
+          <tr data-day="0"><th scope="row" data-i18n="hours.days.6.label">Pühapäev</th><td>12:00 – 20:00</td></tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+
+    <div class="card reveal">
+      <h2 class="h3" data-i18n="ui.findUs">Leia meid</h2>
+      <address>
+        Kopli tn 16<br>10412 Tallinn<br>Estonia<br>
+      </address>
+      
+      <div class="card__actions">
+        <a class="btn btn--accent" href="https://www.google.com/maps/dir/?api=1&destination=Kopli%20tn%2016%2C%2010412%20Tallinn%2C%20Estonia" target="_blank" rel="noopener" data-i18n="ui.getDirections">Vaata teekonda</a>
+        <a class="btn btn--outline" href="tel:+3725292456">+372 529 2456</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════════════════ -->
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <p class="foot__word">Kartul</p>
+      <p class="foot__line" data-i18n="footLine">Vegan ja rahvusvaeline toit.<br>Kopli tn 16, Tallinn.</p>
+    </div>
+    <div class="foot__col">
+      <h3 data-i18n="ui.contact">Kontakt</h3>
+      <p><a href="tel:+3725292456">+372 529 2456</a></p>
+      <p><a href="https://www.google.com/maps/dir/?api=1&destination=Kopli%20tn%2016%2C%2010412%20Tallinn%2C%20Estonia" target="_blank" rel="noopener">Kopli tn 16, 10412 Tallinn</a></p>
+    </div>
+    
+    
+    <div class="foot__col">
+      <h3 data-i18n="ui.follow">Jälgi</h3>
+      
+      <p><a href="https://www.instagram.com/kartul.16/" target="_blank" rel="noopener">Instagram</a></p>
+      
+    </div>
+    
+  </div>
+  <div class="wrap foot__base">
+    <p>© <span id="yr">2026</span> Kartul</p>
+    <p class="foot__demo" data-i18n="flags.demoNotice">Kontseptsioonisait, loodud pakkumisena. Pole veel ametlik Kartul leht.</p>
+  </div>
+</footer>
+
+<script id="venue-runtime" type="application/json">{"timezone":"Europe/Tallinn","hours":{"0":[720,1200],"1":null,"2":null,"3":[720,1200],"4":[720,1200],"5":[720,1380],"6":[720,1380]},"ratingSource":"Google","lang":"et","langs":["et","en","ru"],"venueName":"Kartul","rating":5,"count":103,"ui":{"skip":"Liigu põhisisu juurde","navPrimary":"Peamine","navHome":"{name}, avaleht","order":"Telli","seeMenu":"Vaata menüüd","findUs":"Leia meid","openingHours":"Lahtiolekuajad","getDirections":"Vaata teekonda","googleMaps":"Google Maps","plusCode":"Plus-kood","contact":"Kontakt","follow":"Jälgi","closed":"Suletud","langGroup":"Keel","checkingHours":"Kontrollime lahtiolekuaegu…","scoreReviews":"{count} {source} arvustust","bigscoreFrom":"{count} {source} arvustuse põhjal","liveFrom":"Otse {source}","readOn":"Loe neid {source}","quotedAsWritten":"Arvustused avaldatud {source}, tsiteeritud muutmata kujul.","fullMenuOn":"Täielik menüü {brand}","checkedDaily":"Kontrollitud iga päev","ratedOutOf5":"Hinnang {value} / 5","ratingAria":"{source} hinnang"},"rt":{"openUntil":"Avatud · kuni {time}","closedOpens":"Suletud · avaneb {when} {time}","closed":"Suletud","today":"täna","tomorrow":"homme","weekdays":["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"],"justNow":"just praegu","minutesAgo":"{n} minutit tagasi","anHourAgo":"tund aega tagasi","hoursAgo":"{n} tundi tagasi","yesterday":"eile","daysAgo":"{n} päeva tagasi","lastChecked":"Viimati kontrollitud {when}","checkedDaily":"Kontrollitud iga päev","ratedOutOf5":"Hinnang {value} / 5"},"dicts":{"en":{"venue.tagline":"A vegan potato cafe in Kalamaja with coffee, beer and a zine library.","venue.metaTitle":"Kartul","venue.metaDescription":"Kartul is a vegan cafe in Tallinn's Kalamaja serving loaded jacket potatoes, coffee and beer, with a zine library and small shop on site.","venue.ogDescription":"Loaded vegan jacket potatoes, coffee and beer in Kalamaja, Tallinn.","story.eyebrow":"The kitchen","story.heading":"Potatoes, done <em>properly</em>","story.lede":"Kartul is a small vegan cafe in Kalamaja built around one thing: the loaded jacket potato.","story.body":"Baked potatoes come piled with toppings that range from chimichurri to South-Asian spice to sweet-and-sour. It is plant-based comfort food, cheap and filling, with coffee and beer on the side.","band.label":"Kartul","band.eyebrow":"One potato, several ways to eat it","band.heading":"The loaded <em>jacket potato</em>","band.body":"Each potato is baked and topped to order, with options running from chimichurri to South-Asian and sweet-and-sour styles.","menu.eyebrow":"The menu","menu.heading":"What's on","menu.lede":"Jacket potatoes, coffee and beer, all vegan.","menu.combos.title":"Combos","contact.ctaLabel":"Call to order","flags.demoNotice":"Concept site, built as a proposal. Not an official Kartul page yet.","footLine":"Vegan and International food.<br>Kopli tn 16, Tallinn.","story.highlights.0":"Fully vegan menu","story.highlights.1":"Loaded jacket potatoes with global toppings","story.highlights.2":"Zine library and small shop on site","nav.0.label":"Kitchen","nav.1.label":"Menu","nav.2.label":"Rating","nav.3.label":"Visit","stats.0.label":"Google rating","stats.1.label":"Per person","hours.days.0.label":"Monday","hours.days.1.label":"Tuesday","hours.days.2.label":"Wednesday","hours.days.3.label":"Thursday","hours.days.4.label":"Friday","hours.days.5.label":"Saturday","hours.days.6.label":"Sunday","media.gallery.0.alt":"Kartul","media.gallery.1.alt":"Kartul","media.gallery.2.alt":"Kartul","ui.skip":"Skip to the main content","ui.navPrimary":"Primary","ui.navHome":"{name}, home","ui.order":"Order","ui.seeMenu":"See the menu","ui.findUs":"Find us","ui.openingHours":"Opening hours","ui.getDirections":"Get directions","ui.googleMaps":"Google Maps","ui.plusCode":"Plus code","ui.contact":"Contact","ui.follow":"Follow","ui.closed":"Closed","ui.langGroup":"Language","ui.checkingHours":"Checking hours…","ui.scoreReviews":"{count} {source} reviews","ui.bigscoreFrom":"from {count} {source} reviews","ui.liveFrom":"Live from {source}","ui.readOn":"Read them on {source}","ui.quotedAsWritten":"Reviews published on {source}, quoted as written.","ui.fullMenuOn":"Full menu on {brand}","ui.checkedDaily":"Checked daily","ui.ratedOutOf5":"Rated {value} out of 5","ui.ratingAria":"{source} rating","rt.openUntil":"Open now · until {time}","rt.closedOpens":"Closed · opens {when} {time}","rt.closed":"Closed","rt.today":"today","rt.tomorrow":"tomorrow","rt.weekdays.0":"Sunday","rt.weekdays.1":"Monday","rt.weekdays.2":"Tuesday","rt.weekdays.3":"Wednesday","rt.weekdays.4":"Thursday","rt.weekdays.5":"Friday","rt.weekdays.6":"Saturday","rt.justNow":"just now","rt.minutesAgo":"{n} minutes ago","rt.anHourAgo":"an hour ago","rt.hoursAgo":"{n} hours ago","rt.yesterday":"yesterday","rt.daysAgo":"{n} days ago","rt.lastChecked":"Last checked {when}","rt.checkedDaily":"Checked daily","rt.ratedOutOf5":"Rated {value} out of 5"},"et":{"venue.tagline":"Vegan kartulikohvik Kalamajas kohvi, õlle ja ajakirjariiuliga.","venue.metaTitle":"Kartul","venue.metaDescription":"Kartul on vegan kohvik Tallinna Kalamajas, kus pakutakse täidetud ahjukartuleid, kohvi ja õlut ning kohapeal on ka zine'ide riiul ja väike pood.","venue.ogDescription":"Täidetud vegan ahjukartulid, kohv ja õlu Kalamajas, Tallinnas.","story.eyebrow":"Köök","story.heading":"Kartulid, tehtud <em>korralikult</em>","story.lede":"Kartul on väike vegan kohvik Kalamajas, mis keskendub ühele asjale: täidetud ahjukartulile.","story.body":"Ahjukartulid tulevad lauale kuhjaga täidisega, alates chimichurri't kuni Lõuna-Aasia vürtside ja hapukas-magusa maitseni. See on taimne mugavustoit, odav ja kõhtutäitev, kõrvale kohv ja õlu.","band.label":"Kartul","band.eyebrow":"Üks kartul, mitu moodust seda süüa","band.heading":"Täidetud <em>ahjukartul</em>","band.body":"Iga kartul küpsetatakse ja täidetakse tellimuse peale, valikus chimichurri, Lõuna-Aasia ja hapukas-magusa stiilis variandid.","menu.eyebrow":"Menüü","menu.heading":"Mida pakume","menu.lede":"Ahjukartulid, kohv ja õlu, kõik vegan.","menu.combos.title":"Komplektid","contact.ctaLabel":"Helista ja telli","flags.demoNotice":"Kontseptsioonisait, loodud pakkumisena. Pole veel ametlik Kartul leht.","footLine":"Vegan ja rahvusvaeline toit.<br>Kopli tn 16, Tallinn.","story.highlights.0":"Täielikult vegan menüü","story.highlights.1":"Täidetud ahjukartulid maailma maitsetega","story.highlights.2":"Zine'ide riiul ja väike pood kohapeal","nav.0.label":"Köök","nav.1.label":"Menüü","nav.2.label":"Hinnang","nav.3.label":"Külasta","stats.0.label":"Google'i hinnang","stats.1.label":"Inimese kohta","hours.days.0.label":"Esmaspäev","hours.days.1.label":"Teisipäev","hours.days.2.label":"Kolmapäev","hours.days.3.label":"Neljapäev","hours.days.4.label":"Reede","hours.days.5.label":"Laupäev","hours.days.6.label":"Pühapäev","media.gallery.0.alt":"Kartul","media.gallery.1.alt":"Kartul","media.gallery.2.alt":"Kartul","ui.skip":"Liigu põhisisu juurde","ui.navPrimary":"Peamine","ui.navHome":"{name}, avaleht","ui.order":"Telli","ui.seeMenu":"Vaata menüüd","ui.findUs":"Leia meid","ui.openingHours":"Lahtiolekuajad","ui.getDirections":"Vaata teekonda","ui.googleMaps":"Google Maps","ui.plusCode":"Plus-kood","ui.contact":"Kontakt","ui.follow":"Jälgi","ui.closed":"Suletud","ui.langGroup":"Keel","ui.checkingHours":"Kontrollime lahtiolekuaegu…","ui.scoreReviews":"{count} {source} arvustust","ui.bigscoreFrom":"{count} {source} arvustuse põhjal","ui.liveFrom":"Otse {source}","ui.readOn":"Loe neid {source}","ui.quotedAsWritten":"Arvustused avaldatud {source}, tsiteeritud muutmata kujul.","ui.fullMenuOn":"Täielik menüü {brand}","ui.checkedDaily":"Kontrollitud iga päev","ui.ratedOutOf5":"Hinnang {value} / 5","ui.ratingAria":"{source} hinnang","rt.openUntil":"Avatud · kuni {time}","rt.closedOpens":"Suletud · avaneb {when} {time}","rt.closed":"Suletud","rt.today":"täna","rt.tomorrow":"homme","rt.weekdays.0":"Pühapäev","rt.weekdays.1":"Esmaspäev","rt.weekdays.2":"Teisipäev","rt.weekdays.3":"Kolmapäev","rt.weekdays.4":"Neljapäev","rt.weekdays.5":"Reede","rt.weekdays.6":"Laupäev","rt.justNow":"just praegu","rt.minutesAgo":"{n} minutit tagasi","rt.anHourAgo":"tund aega tagasi","rt.hoursAgo":"{n} tundi tagasi","rt.yesterday":"eile","rt.daysAgo":"{n} päeva tagasi","rt.lastChecked":"Viimati kontrollitud {when}","rt.checkedDaily":"Kontrollitud iga päev","rt.ratedOutOf5":"Hinnang {value} / 5"},"ru":{"venue.tagline":"Веганское картофельное кафе в Каламая с кофе, пивом и библиотекой зинов.","venue.metaTitle":"Kartul","venue.metaDescription":"Kartul — веганское кафе в таллинском Каламая с запечённым картофелем и начинками, кофе и пивом, библиотекой зинов и небольшим магазином.","venue.ogDescription":"Запечённый веганский картофель с начинками, кофе и пиво в Каламая, Таллин.","story.eyebrow":"Кухня","story.heading":"Картофель, приготовленный <em>как надо</em>","story.lede":"Kartul — небольшое веганское кафе в Каламая, построенное вокруг одного блюда: запечённой картошки с начинкой.","story.body":"Печёный картофель подаётся с начинками, от чимичурри до южноазиатских специй и кисло-сладких соусов. Это растительная комфортная еда, недорогая и сытная, с кофе и пивом на стороне.","band.label":"Kartul","band.eyebrow":"Одна картошка, много способов её съесть","band.heading":"Запечённый <em>картофель с начинкой</em>","band.body":"Каждая картофелина запекается и заправляется на заказ: от чимичурри до южноазиатских и кисло-сладких вариантов.","menu.eyebrow":"Меню","menu.heading":"Что у нас есть","menu.lede":"Картофель, кофе и пиво — всё веганское.","menu.combos.title":"Комбо","contact.ctaLabel":"Позвонить и заказать","flags.demoNotice":"Концепт-сайт, созданный как предложение. Пока не официальная страница Kartul.","footLine":"Веганская и интернациональная кухня.<br>Kopli tn 16, Таллин.","story.highlights.0":"Полностью веганское меню","story.highlights.1":"Картофель с начинками со всего мира","story.highlights.2":"Библиотека зинов и небольшой магазин","nav.0.label":"Кухня","nav.1.label":"Меню","nav.2.label":"Рейтинг","nav.3.label":"Визит","stats.0.label":"Рейтинг Google","stats.1.label":"На человека","hours.days.0.label":"Понедельник","hours.days.1.label":"Вторник","hours.days.2.label":"Среда","hours.days.3.label":"Четверг","hours.days.4.label":"Пятница","hours.days.5.label":"Суббота","hours.days.6.label":"Воскресенье","media.gallery.0.alt":"Kartul","media.gallery.1.alt":"Kartul","media.gallery.2.alt":"Kartul","ui.skip":"Перейти к содержимому","ui.navPrimary":"Основное","ui.navHome":"{name}, главная","ui.order":"Заказать","ui.seeMenu":"Смотреть меню","ui.findUs":"Как нас найти","ui.openingHours":"Часы работы","ui.getDirections":"Построить маршрут","ui.googleMaps":"Google Maps","ui.plusCode":"Plus code","ui.contact":"Контакты","ui.follow":"Подписаться","ui.closed":"Закрыто","ui.langGroup":"Язык","ui.checkingHours":"Проверяем часы работы…","ui.scoreReviews":"{count} отзывов {source}","ui.bigscoreFrom":"на основе {count} отзывов {source}","ui.liveFrom":"Данные с {source}","ui.readOn":"Читать на {source}","ui.quotedAsWritten":"Отзывы опубликованы на {source}, приведены как есть.","ui.fullMenuOn":"Полное меню на {brand}","ui.checkedDaily":"Проверяется ежедневно","ui.ratedOutOf5":"Оценка {value} из 5","ui.ratingAria":"Рейтинг {source}","rt.openUntil":"Открыто · до {time}","rt.closedOpens":"Закрыто · откроется {when} {time}","rt.closed":"Закрыто","rt.today":"сегодня","rt.tomorrow":"завтра","rt.weekdays.0":"Воскресенье","rt.weekdays.1":"Понедельник","rt.weekdays.2":"Вторник","rt.weekdays.3":"Среда","rt.weekdays.4":"Четверг","rt.weekdays.5":"Пятница","rt.weekdays.6":"Суббота","rt.justNow":"только что","rt.minutesAgo":"{n} минут назад","rt.anHourAgo":"час назад","rt.hoursAgo":"{n} часов назад","rt.yesterday":"вчера","rt.daysAgo":"{n} дней назад","rt.lastChecked":"Последняя проверка: {when}","rt.checkedDaily":"Проверяется ежедневно","rt.ratedOutOf5":"Оценка {value} из 5"}},"locales":{"et":"et-EE","en":"en-GB","ru":"ru-RU"}}</script>
+
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+
+<script src="main.js" defer></script>
+</body>
+</html>
