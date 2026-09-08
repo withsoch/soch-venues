@@ -3,7 +3,7 @@
   "trailingSlash": true,
   "rewrites": [
     {
-      "source": "/_hosttest",
+      "source": "/_hosttest/",
       "has": [
         {
           "type": "host",
@@ -11,6 +11,16 @@
         }
       ],
       "destination": "/papa-misha/"
+    },
+    {
+      "source": "/_hosttest/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "soch-venues.vercel.app"
+        }
+      ],
+      "destination": "/papa-misha/:path*"
     }
   ],
   "headers": [
