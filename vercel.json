@@ -1,14 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-
-  "//": "One project serves every venue. Proposal links are subpaths (/papa-misha/); a signed client gets their own domain attached to THIS project plus a host rewrite in the block below, which serves their site at their own root.",
-
-  "//trailingSlash": "Load-bearing. Every venue page references its assets relatively (assets/..., styles.css). At /papa-misha with no slash the browser resolves those against / and every asset 404s. true forces the 308 to /papa-misha/ so relative paths resolve inside the venue folder.",
   "trailingSlash": true,
-
   "rewrites": [],
-
-  "//headers": "Hoisted from the per-venue vercel.json files, which Vercel ignores outside the project root. Same rules, scoped per venue folder.",
   "headers": [
     {
       "source": "/:venue/assets/fonts/:path*",

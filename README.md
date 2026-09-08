@@ -12,6 +12,24 @@ there is no upload step and no CLI. This is the part that differs from the old
 setup, where `deploy.mjs` uploaded files straight to the Vercel API and the
 per-venue repo was only a dead snapshot that nothing ever deployed from.
 
+## `vercel.json` notes
+
+**No comments in that file.** Vercel validates it strictly and rejects unknown
+top-level keys — including the `"//": "..."` trick used for comments elsewhere
+in this codebase. It fails the deployment with
+`Invalid request: should NOT have additional property "//"`. Explanations go
+here instead.
+
+**`trailingSlash: true` is load-bearing.** Every venue page references its
+assets relatively (`assets/…`, `styles.css`). At `/papa-misha` with no trailing
+slash the browser resolves those against `/`, and every asset 404s. The `true`
+forces a 308 to `/papa-misha/` so relative paths resolve inside the venue
+folder.
+
+**The cache headers** were hoisted out of the per-venue `vercel.json` files,
+which Vercel ignores anywhere but the project root. Same rules, scoped per
+venue folder with `/:venue/…`.
+
 ## Layout
 
 ```
