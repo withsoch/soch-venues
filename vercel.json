@@ -141,6 +141,26 @@
         }
       ],
       "destination": "/koht/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "latvijas-kebabs-un-bistro.soovita.com"
+        }
+      ],
+      "destination": "/latvijas-kebabs-un-bistro/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "latvijas-kebabs-un-bistro.soovita.com"
+        }
+      ],
+      "destination": "/latvijas-kebabs-un-bistro/:path*"
     }
   ],
   "headers": [
