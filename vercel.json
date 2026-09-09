@@ -177,26 +177,6 @@
       "has": [
         {
           "type": "host",
-          "value": "restoran-olde-hansa.soovita.com"
-        }
-      ],
-      "destination": "/restoran-olde-hansa/"
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "restoran-olde-hansa.soovita.com"
-        }
-      ],
-      "destination": "/restoran-olde-hansa/:path*"
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
           "value": "tallinn-pizza-kebab.soovita.com"
         }
       ],
