@@ -51,26 +51,53 @@ soch-venues/
     └── data/reviews.json
 ```
 
-Venue folders sit at the root so a proposal link is
-`soch-venues.vercel.app/<venue-slug>/` — no rewrite needed, and no limit on
-how many venues can live here.
+Venue folders sit at the root, so every venue always has a working fallback at
+`soch-venues.vercel.app/<venue-slug>/` with no rewrite and no limit.
+
+## Every venue gets `<slug>.soovita.com`
+
+Rizwan calls the venue *before* a site is built, so there are no throwaway
+proposal links here — each site is a real pitch and gets a real hostname. The
+builder does this automatically on publish: it registers the hostname on the
+project and writes its two rewrites into `vercel.json`, **in the same commit as
+the venue files** so publishing costs one Vercel build, not two.
+
+**There is no per-venue DNS step.** `soovita.com` carries a single wildcard
+CNAME:
+
+```
+*   CNAME   3d308f8515b4c967.vercel-dns-017.com
+```
+
+That one record covers every subdomain forever. Adding the hostname to the
+Vercel project needs no DNS round-trip, because the apex is already verified on
+the account.
+
+**Why a wildcard in DNS and not a wildcard domain in Vercel.** Registering
+`*.soovita.com` *with Vercel* forces Vercel's nameservers onto the domain — and
+soovita.com carries live Google Workspace mail (`MX → smtp.google.com`) plus a
+Google site-verification TXT. A wildcard CNAME leaves the nameservers at
+Hostinger and cannot touch MX at all.
+
+The binding limit is **50 domains per project on Hobby**, so 50 live venues.
+Retiring a venue detaches its hostname and frees the slot.
 
 ## Giving a signed client their own domain
 
-1. Add the domain to the **`soch-venues`** Vercel project (Settings → Domains).
-   Hobby allows 50 domains per project.
-2. Add two rules to the `rewrites` array in `vercel.json`:
+Same mechanism, their hostname:
 
 ```json
 { "source": "/",       "has": [{ "type": "host", "value": "papamisha.ee" }], "destination": "/papa-misha/" },
 { "source": "/:path*", "has": [{ "type": "host", "value": "papamisha.ee" }], "destination": "/papa-misha/:path*" }
 ```
 
-The client's domain then serves their site at its own root, while the
-`soch-venues.vercel.app/papa-misha/` path keeps working.
+Their domain needs its own DNS record pointing at the project (the wildcard
+only covers `soovita.com`). `has` with `type: "host"` is a plain `vercel.json`
+feature — no Next.js, no framework.
 
-`has` with `type: "host"` is a plain `vercel.json` feature — it does not need
-Next.js or any framework.
+**A client's domain is never detached by the retire flow**, even forced —
+unbinding it would take their live site down with no way for us to restore it.
+A venue carrying a non-`soovita.com` host blocks the delete instead.
 
 ## Retiring a venue
 
