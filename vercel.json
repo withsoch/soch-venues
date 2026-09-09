@@ -21,6 +21,26 @@
         }
       ],
       "destination": "/papa-misha/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "abma-s-farm-market-greenhouse-and-barnya.soovita.com"
+        }
+      ],
+      "destination": "/abma-s-farm-market-greenhouse-and-barnya/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "abma-s-farm-market-greenhouse-and-barnya.soovita.com"
+        }
+      ],
+      "destination": "/abma-s-farm-market-greenhouse-and-barnya/:path*"
     }
   ],
   "headers": [
