@@ -161,6 +161,26 @@
         }
       ],
       "destination": "/latvijas-kebabs-un-bistro/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "q-pizza-pan.soovita.com"
+        }
+      ],
+      "destination": "/q-pizza-pan/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "q-pizza-pan.soovita.com"
+        }
+      ],
+      "destination": "/q-pizza-pan/:path*"
     }
   ],
   "headers": [
