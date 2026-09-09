@@ -41,6 +41,26 @@
         }
       ],
       "destination": "/abma-s-farm-market-greenhouse-and-barnya/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "baras-justini-k-s.soovita.com"
+        }
+      ],
+      "destination": "/baras-justini-k-s/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "baras-justini-k-s.soovita.com"
+        }
+      ],
+      "destination": "/baras-justini-k-s/:path*"
     }
   ],
   "headers": [
