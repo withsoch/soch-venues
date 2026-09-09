@@ -61,6 +61,26 @@
         }
       ],
       "destination": "/baras-justini-k-s/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "k-ht-by-nail-spa.soovita.com"
+        }
+      ],
+      "destination": "/k-ht-by-nail-spa/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "k-ht-by-nail-spa.soovita.com"
+        }
+      ],
+      "destination": "/k-ht-by-nail-spa/:path*"
     }
   ],
   "headers": [
