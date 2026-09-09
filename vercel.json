@@ -101,6 +101,26 @@
         }
       ],
       "destination": "/kalyan-lounge-demo/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "kartul.soovita.com"
+        }
+      ],
+      "destination": "/kartul/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "kartul.soovita.com"
+        }
+      ],
+      "destination": "/kartul/:path*"
     }
   ],
   "headers": [
