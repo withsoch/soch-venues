@@ -201,6 +201,26 @@
         }
       ],
       "destination": "/rahwa-resto-grill-bbq/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "restoran-olde-hansa.soovita.com"
+        }
+      ],
+      "destination": "/restoran-olde-hansa/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "restoran-olde-hansa.soovita.com"
+        }
+      ],
+      "destination": "/restoran-olde-hansa/:path*"
     }
   ],
   "headers": [
