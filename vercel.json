@@ -7,6 +7,16 @@
       "has": [
         {
           "type": "host",
+          "value": "soch-venues.vercel.app"
+        }
+      ],
+      "destination": "/_home/"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
           "value": "papa-misha.soovita.com"
         }
       ],
