@@ -221,6 +221,26 @@
         }
       ],
       "destination": "/restoran-olde-hansa/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tallinn-pizza-kebab.soovita.com"
+        }
+      ],
+      "destination": "/tallinn-pizza-kebab/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "tallinn-pizza-kebab.soovita.com"
+        }
+      ],
+      "destination": "/tallinn-pizza-kebab/:path*"
     }
   ],
   "headers": [
