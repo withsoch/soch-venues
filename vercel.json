@@ -181,6 +181,26 @@
         }
       ],
       "destination": "/q-pizza-pan/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "rahwa-resto-grill-bbq.soovita.com"
+        }
+      ],
+      "destination": "/rahwa-resto-grill-bbq/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "rahwa-resto-grill-bbq.soovita.com"
+        }
+      ],
+      "destination": "/rahwa-resto-grill-bbq/:path*"
     }
   ],
   "headers": [
