@@ -121,6 +121,26 @@
         }
       ],
       "destination": "/kartul/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "koht.soovita.com"
+        }
+      ],
+      "destination": "/koht/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "koht.soovita.com"
+        }
+      ],
+      "destination": "/koht/:path*"
     }
   ],
   "headers": [
