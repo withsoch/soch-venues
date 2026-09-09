@@ -81,6 +81,26 @@
         }
       ],
       "destination": "/k-ht-by-nail-spa/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "kalyan-lounge-demo.soovita.com"
+        }
+      ],
+      "destination": "/kalyan-lounge-demo/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "kalyan-lounge-demo.soovita.com"
+        }
+      ],
+      "destination": "/kalyan-lounge-demo/:path*"
     }
   ],
   "headers": [
