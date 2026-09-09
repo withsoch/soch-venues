@@ -1,7 +1,28 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
-  "rewrites": [],
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "papa-misha.soovita.com"
+        }
+      ],
+      "destination": "/papa-misha/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "papa-misha.soovita.com"
+        }
+      ],
+      "destination": "/papa-misha/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/:venue/assets/fonts/:path*",
